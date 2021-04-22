@@ -150,18 +150,24 @@ Variance of W
 \end{align*}
 
 
-$E[Y-Z]=0$\\
-The mean is zero.\\
+$E[Y-Z]=\mu_Y-\mu_Z=2-2=0$\\
+
 
 We know,
 \begin{align*}
 R_X(\tau) &=E[X(t)X(t+\tau)]\\
-E[X^2(t)] &=R_X(0)\\
-E[X^2(2)] &=E[X^2(4)]=R_X(0)
+R_X(0)  &=E[X^2(t)]
 \end{align*}
+
+Let $t_1=2$ and $t_2=4$\\
+$Y & = X(t_1)$\\
+$Z & = X(t_2)$\\
+
 So,
 \begin{align*}
-\sigma_W^2 & = R_X(0)+R_X(0)-2R_X(2)\\
+\sigma_W^2 & = E[X^2(t_1)]+E[X^2(t_2)]-2E[X(t_1)X(t_2)]\\
+           & = E[X^2(t_1)]+E[X^2(t_2)]-2E[X(t_1)X(t_1+2)]\\
+           & = R_X(0)+R_X(0)-2R_X(2)\\
            & = 4\left(e^{-0.2|0|}+1\right)+4\left(e^{-0.2|0|}+1\right)-2\times4\left(e^{-0.2|2|}+1\right)\\
            & = 8+8-2[4(0.67+1)]\\
            & = 2.64
