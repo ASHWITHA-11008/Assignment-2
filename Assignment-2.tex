@@ -143,7 +143,7 @@ Let Y and Z be the random variables obtained by sampling $X(t)$ at $t=2$ and $t=
 
 Given $W=Y-Z$\\
 
-Variance of W
+Variance of W,
 \begin{align*}
 \sigma_W^2 & = E[Y-Z]^2-\left(E[Y-Z]\right)^2\\
            & = E[Y^2]+E[Z^2]-2E[YZ]
@@ -155,21 +155,23 @@ $E[Y-Z]=\mu_Y-\mu_Z=2-2=0$\\
 
 We know,
 \begin{align*}
-R_X(\tau) &=E[X(t)X(t+\tau)]\\
-R_X(0)  &=E[X^2(t)]
+R_X(\tau) & =E[X(t)X(t+\tau)]\\
+R_X(0) & =E[X^2(t)]
 \end{align*}
 
+
+
 Let $t_1=2$ and $t_2=4$\\
-$Y & = X(t_1)$\\
-$Z & = X(t_2)$\\
+$Y  = X(t_1)$\\
+$Z  = X(t_2)$\\
 
 So,
 \begin{align*}
 \sigma_W^2 & = E[X^2(t_1)]+E[X^2(t_2)]-2E[X(t_1)X(t_2)]\\
-           & = E[X^2(t_1)]+E[X^2(t_2)]-2E[X(t_1)X(t_1+2)]\\
-           & = R_X(0)+R_X(0)-2R_X(2)\\
-           & = 4\left(e^{-0.2|0|}+1\right)+4\left(e^{-0.2|0|}+1\right)-2\times4\left(e^{-0.2|2|}+1\right)\\
-           & = 8+8-2[4(0.67+1)]\\
+           & = 2E[X^2(t_1)]-2E[X(t_1)X(t_1+2)]\\
+           & = 2R_X(0)-2R_X(2)\\
+           & = 8\left(e^{-0.2|0|}+1\right)-2\times4\left(e^{-0.2|2|}+1\right)\\
+           & = 8(2)-2[4(0.67+1)]\\
            & = 2.64
 \end{align*}
 
