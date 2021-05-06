@@ -136,13 +136,13 @@ https://github.com/ASHWITHA-11008/Assignment-2/blob/main/Assignment-2.tex
 \end{lstlisting}
 
 \section{Problem}
-$X(t)$ is a random process with a constant mean value of 2 and the autocorrelation function $R_x(\tau)=4\left(e^{-0.2|\tau|}+1\right)$.
+$X(t)$ is a random process with a constant mean value of 2 and the autocorrelation function $R_x(\tau)=4\brak{e^{-0.2|\tau|}+1}$.
 Let Y and Z be the random variables obtained by sampling $X(t)$ at $t=2$ and $t=4$ respectively. Let $W=Y-Z$. The variance of W is
 
 \begin{enumerate}
-    \item 13.36\\
-    \item 9.36\\
-    \item 2.64\\
+    \item 13.36
+    \item 9.36
+    \item 2.64
     \item 8.00
 \end{enumerate}
 
@@ -150,15 +150,15 @@ Let Y and Z be the random variables obtained by sampling $X(t)$ at $t=2$ and $t=
 
 Let \:\ $t_1 =2$ \:\ and \:\ $t_2 =4$
 \begin{align}
-\Longrightarrow Y = X(t_1)\\
-\Longrightarrow Z = X(t_2)
+\implies Y = X(t_1)\\
+\implies Z = X(t_2)
 \end{align}
 
 
 We know,
 \begin{align}
-\Longrightarrow R_X(\tau) & =E[X(t)X(t+\tau)]\\
-\Longrightarrow R_X(0) & =E[X^2(t)]
+\implies R_X(\tau) & =E[X(t)X(t+\tau)]\\
+\implies R_X(0) & =E[X^2(t)]
 \end{align}
 
 
@@ -167,7 +167,7 @@ So,
 \sigma_W^2 & = E[X^2(t_1)]+E[X^2(t_2)]-2E[X(t_1)X(t_2)]\\
            & = 2E[X^2(t_1)]-2E[X(t_1)X(t_1+2)]\\
            & = 2R_X(0)-2R_X(2)\\
-           & = 8\left(e^{-0.2|0|}+1\right)-2\times4\left(e^{-0.2|2|}+1\right)\\
+           & = 8\brak{e^{-0.2|0|}+1}-2\times4\brak{e^{-0.2|2|}+1}\\
            & = 8(2)-2[4(0.67+1)]\\
            & = 2.64
 \end{align}
